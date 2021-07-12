@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- gs-css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div class="hero">
+    <section class="gs-gs-nav">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Success</a>
+                        </li>
+                        <li class="nav-item gs-round">
+                            <a class="nav-link" href="#">Payment Dashboard</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item gs-gs-nav-right">
+                            <a href="">Member Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+
+    <section class="gs-gs-one ">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div style="margin: auto; max-width:500px">
+                        <h1>Legacy Aio</h1>
+                        <h2>legacyaio</h2>
+                      
+                        <p style="
+                            margin-bottom: 0.5rem;
+                        " ><small> noun ['legese]</small> <br>
+                           </p>
+                           <p class="typing-text" ></p>
+
+                        <div class=" gs-text">
+                            <a class="gs-btn-btn">Purchase a Membership</a>
+                            <p></p>
+                            <p>$70 Monthly</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+
+
+
+<style>
+                            
+    .typing-text::after {
+      content: "|";
+      animation: blink ease 1s infinite;
+    }
+    
+    @keyframes blink {
+      0%, 100% {
+        opacity: 0;
+      } 50% {
+        opacity: 1;
+      }
+    }
+                            </style>
+    
+    
+    <script>
+        // get the element
+    const text = document.querySelector('.typing-text');
+    
+    // make a words array
+    const words = [
+      " 1. the best cook group around."
+    ];
+    
+    // start typing effect
+    setTyper(text, words);
+    
+    function setTyper(element, words) {
+    
+      const LETTER_TYPE_DELAY = 75;
+      const WORD_STAY_DELAY = 2000;
+    
+      const DIRECTION_FORWARDS = 0;
+      const DIRECTION_BACKWARDS = 1;
+    
+      var direction = DIRECTION_FORWARDS;
+      var wordIndex = 0;
+      var letterIndex = 0;
+    
+      var wordTypeInterval;
+    
+      startTyping();
+    
+      function startTyping() {
+        wordTypeInterval = setInterval(typeLetter, LETTER_TYPE_DELAY);
+      }
+    
+      function typeLetter() {
+        const word = words[wordIndex];
+    
+        if (direction == DIRECTION_FORWARDS) {
+          letterIndex++;
+    
+          if (letterIndex == word.length) {
+            direction = DIRECTION_BACKWARDS;
+            clearInterval(wordTypeInterval);
+            setTimeout(startTyping, WORD_STAY_DELAY);
+          }
+    
+        } else if (direction == DIRECTION_BACKWARDS) {
+          letterIndex--;
+    
+          if (letterIndex == 0) {
+            nextWord();
+          }
+        }
+    
+        const textToType = word.substring(0, letterIndex);
+    
+        element.textContent = textToType;
+      }
+    
+      function nextWord() {
+    
+        letterIndex = 0;
+        direction = DIRECTION_FORWARDS;
+        wordIndex++;
+    
+        if (wordIndex == words.length) {
+          wordIndex = 0;
+        }
+    
+      }
+    }
+    
+    </script>
+
+
+
+
+
+
+    <section class="gs-gs-revised">
+        <div class="container-fluid">
+            <h2 class="gs-font-style">Our Features</h2>
+
+            <h2 style="text-align: center; padding-top:50px;    font-family: 'Open Sans', sans-serif;    font-weight: 900;
+            padding-bottom: 50px;" class="gs-norm" >Our Features</h2>
+
+            <div class="row">
+                <div class="col-xs-1 col-sm-1">
+                    
+                </div>
+
+                <div class="col-xs-2  col-lg-2 gs-col-col-pad">
+                    <h5>Feature 1</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vero, pariatur omnis ab quam voluptatibus.</p>
+                </div>
+                <div class="col-xs-2 col-lg-2 gs-col-col-pad">
+                    <h5>Feature 1</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vero, pariatur omnis ab quam voluptatibus.</p>
+                </div>
+                <div class="col-xs-2 col-lg-2 gs-col-col-pad">
+                    <h5>Feature 1</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vero, pariatur omnis ab quam voluptatibus.</p>
+                </div>
+                <div class="col-xs-2 col-lg-2 gs-col-col-pad">
+                    <h5>Feature 1</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vero, pariatur omnis ab quam voluptatibus.</p>
+                </div>
+                <div class="col-xs-2 col-lg-2 gs-col-col-pad">
+                    <h5>Feature 1</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vero, pariatur omnis ab quam voluptatibus.</p>
+                </div>
+
+                <div class="col-xs-1 col-sm-1">
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="container-fluid pt-5">
+            <div class="row">
+                <div class="col-sm-1">
+
+                </div>
+
+                <div class="col-xs-2 col-sm-2 gs-col-col-pad">
+                    <h5>Feature 1</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vero, pariatur omnis ab quam voluptatibus.</p>
+                </div>
+
+                <div class="col-xs-2 col-sm-2 gs-col-col-pad">
+                    <h5>Feature 1</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vero, pariatur omnis ab quam voluptatibus.</p>
+                </div>
+
+                <div class="col-xs-2 col-sm-2 gs-col-col-pad">
+                    <h5>Feature 1</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vero, pariatur omnis ab quam voluptatibus.</p>
+                </div>
+ 
+                
+
+                <div class="col-sm" style="max-width: 400px;
+                margin: auto;">
+                    <div class="row gs-bgbg-dark">
+                        <div class="col-8">
+                            <h2>Memberships</h2>
+                            <h3>$70 Monthly</h3>
+                            <button class="gs-ogbd">Sold Out</button>
+                            <br>
+                            <!-- <a class="gs-btn-btn gs-btn-si">Sold Out</a> -->
+                        </div>
+                        <div class="col" style="align-self: center;">
+                            <img src="assets/img/Logo White.svg" class="img-fluid">
+                        </div>
+                    </div>
+ 
+                </div>
+
+               
+
+
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="gs-gs-three pt-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm">
+                    <div style="max-width: 340px">
+                        <h1>Success</h1>
+                        <h6>Take a look at what puts us <span style="color: #8ECDED">on top</span></h6>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti repudiandae eos veniam nemo a. A commodi culpa cum dolor quam.</p>
+                    </div>
+                </div>
+                <div class="col-sm-8 gs-gs-three-cont">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4"  style="place-self: center;">
+                        <img src="assets/img/logo.png" style="width: 70px">
+                    </div>
+                    <div class="col-sm-4 text-center"  style="place-self: center;">
+                        <button class="gs-con-btn">Contact Us &nbsp;&nbsp;   <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </button>
+                        <br> <br>
+                        <p>2021 Legacy AIO. All Right Reserved</p>
+                    </div>
+                    <div class="col-sm-4" style="place-self: center;">
+                        <ul>
+                            <li>
+                                <a href="">Terms and Conditions</a>
+                            </li>
+                            <li>
+                                <a href="">Privacy and Policy</a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
